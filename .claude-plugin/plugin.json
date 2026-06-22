@@ -1,6 +1,7 @@
 {
   "name": "gjoko-agent-skills",
   "skills": [
+    "./skills/productivity/check-if-implemented",
     "./skills/productivity/understand-task"
   ]
 }
