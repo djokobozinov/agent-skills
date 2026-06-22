@@ -1,0 +1,6 @@
+{
+  "name": "gjoko-agent-skills",
+  "skills": [
+    "./skills/productivity/understand-task"
+  ]
+}
