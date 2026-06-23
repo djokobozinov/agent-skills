@@ -2,6 +2,7 @@
   "name": "gjoko-agent-skills",
   "skills": [
     "./skills/productivity/check-if-implemented",
+    "./skills/productivity/todo-stepper",
     "./skills/productivity/understand-task"
   ]
 }

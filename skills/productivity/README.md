@@ -9,4 +9,4 @@ General workflow tools, not tied to one codebase.
 
 ## Model-Invoked
 
-None yet.
+- [`todo-stepper`](./todo-stepper/SKILL.md) — Work through user-provided todo lists one item at a time.

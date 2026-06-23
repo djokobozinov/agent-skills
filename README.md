@@ -15,7 +15,7 @@ These skills are designed to be short, easy to adapt, and usable across Cursor, 
 
 ### Model-Invoked
 
-None yet.
+- [`todo-stepper`](./skills/productivity/todo-stepper/SKILL.md) — Work through user-provided todo lists one item at a time.
 
 ## Quickstart
 
@@ -60,6 +60,19 @@ This is useful for:
 - Moving from understanding to a plan, implementation, tests, or deeper explanation only when you ask.
 
 Invoke it directly when pasting a task you want explained. It is user-invoked, so agents should not automatically start this workflow unless you request it.
+
+#### `todo-stepper`
+
+Use this when a task includes a checklist, numbered todo list, implementation steps, or asks the agent to proceed step by step with confirmation between items.
+
+The skill makes the agent complete exactly one todo item at a time. After each item, the agent briefly explains what was done, gives simple steps to test the change, and asks whether to continue with the next todo.
+
+This is useful for:
+
+- Working through implementation checklists without skipping ahead.
+- Keeping progress updates short and concrete.
+- Getting test steps after each small change.
+- Staying in control of when the agent continues.
 
 ## Local Development
 
