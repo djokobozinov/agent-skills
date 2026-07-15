@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test UI Changes"
+  short_description: "Guide manual UI checks one step at a time"
+  default_prompt: "Use $test-ui-changes to compare this implementation with the ticket and guide me through its UI tests."

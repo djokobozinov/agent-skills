@@ -11,6 +11,7 @@ These skills are designed to be short, easy to adapt, and usable across Cursor, 
 ### User-Invoked
 
 - [`check-if-implemented`](./skills/productivity/check-if-implemented/SKILL.md) — Check whether a prompted task is already implemented in the current project.
+- [`test-ui-changes`](./skills/productivity/test-ui-changes/SKILL.md) — Compare implemented changes with a ticket and guide manual UI testing one small step at a time.
 - [`understand-task`](./skills/productivity/understand-task/SKILL.md) — Understand a pasted task step by step before implementation.
 
 ### Model-Invoked
@@ -45,6 +46,21 @@ This is useful for:
 - Deciding the smallest next step after the current project state is clear.
 
 Invoke it directly when pasting a task you want checked. It is user-invoked, so agents should not automatically start this workflow unless you request it.
+
+#### `test-ui-changes`
+
+Use this after implementing a UI ticket when you want to test the result manually, without receiving a large checklist all at once.
+
+The skill compares the ticket with the implementation, identifies coverage and gaps, creates a focused manual test plan, and gives you exactly one small UI test at a time. It waits for your pass, fail, blocked, or skip result before continuing.
+
+This is useful for:
+
+- Checking that every acceptance criterion has an observable UI test.
+- Finding requirements that are missing, partial, or not testable through the UI.
+- Testing happy paths, relevant edge cases, and regressions in a controlled sequence.
+- Keeping a final record of passed, failed, blocked, and skipped checks.
+
+Invoke it directly with a ticket and the changes you want tested. It is user-invoked, so agents should not automatically start this workflow unless you request it.
 
 #### `understand-task`
 
@@ -101,4 +117,3 @@ Export generic markdown prompts into `dist/generic/`:
 ```bash
 ./adapters/generic/export.sh
 ```
-
